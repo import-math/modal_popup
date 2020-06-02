@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal popup</title>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="popup">
+            <div class="top-bar">
+
+                <div class="top-bar-text">
+                    Project Settings
+                </div>
+    
+            </div>
+
+            <div class="nav-bar">
+                <div class="nav-bar-text" id="general"><strong>General</strong></div>
+                <div class="nav-bar-text" id="team"><strong>Team</strong></div>
+            </div>
+
+            <div class="center">
+
+                    <div class="center1">
+                        <div class="center-2">
+                            <label>Название проекта: </label>
+                            <input type="text" id="project_name" class="name_pr">
+                        </div>
+                        <div class="center-3">
+                            <label> Описание проекта: </label>
+                            <textarea type="text" id="project_desc" class="description"></textarea>
+                        </div>
+                    </div>  
+
+                    <div class="team-text" style="display: none; padding-left: 20px; padding-right: 20px;">
+                        <strong style="padding-right: 300px" id="team-text">All Users</strong>
+                        <strong id="team-text2">Selected Users</strong>
+                    </div>
+
+                    <div class="center-team" style="display: none; position: relative;" id="center-team">
+                        
+                        <div class="team-left" id="team-left">
+                                    
+                        </div>
+
+                        <div class="team-center" onclick="selectUsers()" style="position: absolute; 
+                        right: 280px;
+                        top: 100px">
+                            <div>+</div>
+                        </div>
+
+                        <div class="team-right" id="team-right" style="border: 1px solid lightgray;">
+                                    
+                        </div>
+
+                        
+                    </div>
+            </div>
+
+            <div class="bottom">
+                    <button onclick="save()" class="save">Save</button>
+                    <button id="close">Close</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="field">
+        <button id="modal-button">
+            click me
+        </button>
+    </div>
+
+
+<script src="/src/main.js"></script>
+</body>
+</html>

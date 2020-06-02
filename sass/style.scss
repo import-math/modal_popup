@@ -1,0 +1,165 @@
+html *
+{
+   font-size: 1em !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    width: 600px;
+    height: 585px;
+    position: relative;
+    background-color: white;
+}
+
+.top-bar {
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-text {
+    padding-left: 20px;
+}
+
+.nav-bar {
+    height: 30px;
+    border-bottom: 1px solid lightgray;
+    margin: 30px;
+    display: flex;
+}
+
+.nav-bar-text {
+    cursor: pointer;
+    padding-right: 70px;
+}
+
+#general {
+    color: rgb(0, 153, 153);
+}
+
+#team {
+    color: black;
+}
+
+.center {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+    height: 360px;
+}
+
+textarea {
+    float: right;
+    height: 200px;
+    width: 70%;
+    border: 1px solid lightgray;
+    
+}
+.center-2 {
+    padding-bottom: 40px;
+}
+
+.center-2 input {
+    float: right;
+    width: 70%;
+    border: 1px solid lightgray;
+}
+
+.save {
+    background-color: rgb(62, 152, 255);
+    color: white;
+}
+
+button {
+    font-size: 15px;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.bottom {
+    float: right;
+    padding: 15px;
+
+}
+
+label {
+    float: left;
+}
+
+
+
+.center1 {
+    margin: 20px;
+}
+
+.team-left, .team-right {
+    overflow-y: auto;
+    height: 300px;
+    width: 40%;
+}
+
+.team-left {
+    float: left;
+}
+.team-right {
+    float: right;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: lightgray;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+
+.center-team {
+    padding: 20px;
+
+}
+
+.person {
+    padding: 10px;
+    border: 1px solid lightgray;
+
+    &:hover {
+        background-color: yellowgreen;
+        cursor: pointer;
+    }
+
+}
+
+.team-center { 
+    &:hover {
+        color: lightsteelblue;
+        cursor: pointer;
+}
+}
+
+.team-lead{
+    padding-bottom: 10;
+}
